@@ -19,13 +19,16 @@ public abstract class StaffMember
         address = eAddress;
         phone = ePhone;
     }
-
     //-----------------------------------------------------------------
     // TODO 2: Returns a string including the basic employee information.
     //-----------------------------------------------------------------
     public String toString()
     {
+        String str = "name" + name +
+                "\naddress" + address +
+                "\nphone" +  phone;
 
+        return str;
     }
 
     //-----------------------------------------------------------------

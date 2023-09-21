@@ -1,7 +1,7 @@
 package com.mycompany.agency;
 
 
-    // TODO 1: Make StaffEmployee a child of StaffMember
+// TODO 1: Make StaffEmployee a child of StaffMember
 
 public class StaffEmployee extends StaffMember
 {
@@ -13,7 +13,7 @@ public class StaffEmployee extends StaffMember
     //  information.
     //-----------------------------------------------------------------
     public StaffEmployee(String eName, String eAddress, String ePhone,
-            String socSecNumber, double rate)
+                         String socSecNumber, double rate)
     {
         super(eName, eAddress, ePhone);
 
@@ -22,19 +22,25 @@ public class StaffEmployee extends StaffMember
     }
 
     //-----------------------------------------------------------------
-    // TODO 3: complete the implementation of toString to return information 
+    // TODO 3: complete the implementation of toString to return information
     //          about a staff employee as a string.
     //-----------------------------------------------------------------
     public String toString()
     {
-    
+        // Jayson
+        String str =  "Staff: " + name +
+                "\nAddress: " + address +
+                "\nPhone Number: " + phone +
+                "\nPay Rate: " + payRate;
+        return str;
     }
 
     //-----------------------------------------------------------------
     // TODO 4:  Returns the pay rate for this staff employee.
     //-----------------------------------------------------------------
+    @Override
     public double pay()
     {
-      return payRate; //Richard
+        return payRate; // Richard
     }
 }
